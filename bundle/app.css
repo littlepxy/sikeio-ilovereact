@@ -499,6 +499,7 @@ a:hover {
 .section {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 .section1 {
@@ -602,6 +603,7 @@ a:hover {
 
 
 #slider-control {
+  z-index: 1;
   padding: 3px;
   position: fixed;
   right: 0;

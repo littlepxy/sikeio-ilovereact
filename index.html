@@ -18,11 +18,21 @@
 
     <!-- <link rel="stylesheet" href="css/app.css"> -->
     <link rel="stylesheet" type="text/css" href="bundle/app.css">
+
+    <!-- (GSAP - GreenSock Animation Platform) -->
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/TweenMax.js"></script>
+    <!-- ScrollToPlugin 提供了额外的功能来实现网页滚动的动画效果 当点击指示器时平滑滚动到被定为的部分 -->
+    <script type="text/javascript" src="node_modules/gsap/src/uncompressed/plugins/ScrollToPlugin.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
 
 <div id="slider-control">
-  <a href="#native" class="active">
+  <a href="#intro-section">
+    <div class="dot"></div>
+  </a>
+
+  <a href="#native">
     <div class="dot"></div>
   </a>
 
@@ -30,20 +40,16 @@
     <div class="dot"></div>
   </a>
 
-  <a href="#async">
+  <a href="#android">
     <div class="dot"></div>
   </a>
 
-  <a href="#flex">
-    <div class="dot"></div>
-  </a>
 </div>
-
 
 <!-- <script src="js/app.js"></script> -->
 <div id="intro-section" class="section section1">
   <div class="overlay"></div>
-  <img class="react-logo" src="img/react-logo.svg"/>
+  <img id="react-logo" class="react-logo" src="img/react-logo.svg"/>
   <h1>Build Native Apps With React</h1>
 
   <div class="nav">
@@ -65,7 +71,7 @@
   </div>
 </div>
 
-<div class="section section2">
+<div id="native" class="section section2">
   <div class="iphone-demo">
     <div class="demo-pic">
       <img src="img/iphone-frame.svg"/>
@@ -83,7 +89,7 @@
   </div>
 </div>
 
-<div class="section section3">
+<div id="touch" class="section section3">
   <div class="iphone-demo">
     <div class="demo-pic">
       <img src="img/iphone-frame.svg"/>
@@ -101,10 +107,12 @@
   </div>
 </div>
 
-<div class="section section4">
+<div id="android" class="section section4">
   <h1>Android Is Here!</h1>
   <img id="android-robot" src="img/android-robot.svg"/>
 </div>
+
+
 
 </body>
 </html>
