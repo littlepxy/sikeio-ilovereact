@@ -603,7 +603,6 @@ a:hover {
 
 
 #slider-control {
-  z-index: 1;
   padding: 3px;
   position: fixed;
   right: 0;
@@ -611,6 +610,7 @@ a:hover {
   -webkit-transform: translate(0%,-45%);
       -ms-transform: translate(0%,-45%);
           transform: translate(0%,-45%);
+  z-index: 1;
 }
 
 #slider-control a {
